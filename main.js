@@ -199,9 +199,25 @@ if (enrollmentForm && enrollmentMessage) {
         body: JSON.stringify(lead),
       });
 
-      const body = await response.json();
+      const contentType = String(response.headers.get('content-type') || '').toLowerCase();
+      let body = {};
+
+      if (contentType.includes('application/json')) {
+        body = await response.json();
+      } else {
+        const raw = await response.text();
+        if (!response.ok) {
+          throw new Error(`Enrollment API returned non-JSON response (status ${response.status}).`);
+        }
+
+        throw new Error(
+          `Enrollment API is not configured correctly (received non-JSON response). ` +
+            `Set mentorloop-api-base in enrollment.html to your backend API URL.`,
+        );
+      }
+
       if (!response.ok) {
-        throw new Error(body.error || 'Failed to submit enrollment');
+        throw new Error(body.error || `Failed to submit enrollment (status ${response.status})`);
       }
 
       enrollmentMessage.textContent = `Thanks ${fullName}! Enrollment saved. Reference: ${body.reference}.`;

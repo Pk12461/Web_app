@@ -8,6 +8,7 @@ const app = express();
 const port = Number(process.env.PORT || 3000);
 const staticRoot = process.cwd();
 const adminApiKey = String(process.env.ADMIN_API_KEY || '').trim();
+const corsOrigin = String(process.env.CORS_ORIGIN || '*').trim();
 
 const requiredEnv = ['DATABASE_URL'];
 for (const key of requiredEnv) {
@@ -91,6 +92,19 @@ const requireAdmin = (req, res, next) => {
 };
 
 app.use(express.json());
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', corsOrigin);
+  res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type,x-admin-key');
+
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+
+  return next();
+});
+
 app.use(express.static(staticRoot));
 
 app.get('/api/health', async (_req, res) => {

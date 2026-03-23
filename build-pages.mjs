@@ -12,6 +12,7 @@ const filesToCopy = [
   'reviews.html',
   'pricing.html',
   'enrollment.html',
+  'enrollment-react.js',
   'styles.css',
   'main.js',
 ];

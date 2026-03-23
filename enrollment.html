@@ -68,62 +68,7 @@
             <h2>Complete enrollment in one step</h2>
           </div>
 
-          <form id="enrollment-form" class="enrollment-form" novalidate>
-            <div class="form-grid">
-              <div>
-                <label for="full-name">Full name</label>
-                <input id="full-name" name="fullName" type="text" required />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required />
-              </div>
-              <div>
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" required />
-              </div>
-              <div>
-                <label for="plan">Plan</label>
-                <select id="plan" name="plan" required>
-                  <option value="starter">Starter - Free (INR 0 / USD 0)</option>
-                  <option value="plus">Plus - INR 1,499/month | USD 19/month</option>
-                  <option value="mentor-pro">Mentor Pro - INR 3,199/month | USD 39/month</option>
-                </select>
-              </div>
-              <div>
-                <label for="currency">Preferred billing currency</label>
-                <select id="currency" name="currency" required>
-                  <option value="INR">INR</option>
-                  <option value="USD">USD</option>
-                </select>
-              </div>
-              <div>
-                <label for="course">Selected course</label>
-                <select id="course" name="course" required>
-                  <option value="Web Development">Web Development</option>
-                  <option value="Data Analytics">Data Analytics</option>
-                  <option value="STEM Excellence">STEM Excellence</option>
-                  <option value="Exam Sprint">Exam Sprint</option>
-                  <option value="Graphic Design">Graphic Design</option>
-                  <option value="UI Fundamentals">UI Fundamentals</option>
-                </select>
-              </div>
-              <div>
-                <label for="city">City</label>
-                <input id="city" name="city" type="text" required />
-              </div>
-              <div class="full-row">
-                <label for="goal">Learning goal</label>
-                <textarea id="goal" name="goal" rows="4" placeholder="Tell us what you want to achieve"></textarea>
-              </div>
-            </div>
-
-            <div class="section-actions">
-              <button class="btn btn-primary" type="submit">Submit enrollment</button>
-              <a class="btn btn-secondary" href="./pricing.html">Back to pricing</a>
-            </div>
-            <p class="form-message" id="enrollment-message" role="status" aria-live="polite"></p>
-          </form>
+          <div id="enrollment-react-root"></div>
         </section>
       </main>
 
@@ -153,6 +98,10 @@
       </footer>
     </div>
 
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+    <script src="enrollment-react.js"></script>
     <script src="./main.js" defer></script>
   </body>
 </html>

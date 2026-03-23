@@ -1,6 +1,6 @@
 # MentorLoop
 
-A responsive student learning platform website built with HTML, CSS, JavaScript, and a Node.js + PostgreSQL enrollment API.
+A responsive student learning platform website built with HTML, CSS, JavaScript, React (for enrollment UI), and a Node.js + PostgreSQL enrollment API.
 
 ## Live now
 
