@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MentorLoop is a modern student learning platform for live classes, guided roadmaps, certificates, and progress tracking."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>MentorLoop | Student Learning Platform</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" id="top">
+        <a class="brand" href="./index.html" aria-label="MentorLoop home">
+          <span class="brand-mark">M</span>
+          <span>MentorLoop</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="./features.html">Features</a>
+          <a href="./categories.html">Categories</a>
+          <a href="./roadmap.html">Roadmap</a>
+          <a href="./reviews.html">Reviews</a>
+          <a href="./pricing.html">Pricing</a>
+        </nav>
+
+        <a class="btn btn-ghost desktop-only" href="./pricing.html">Start free</a>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-copy">
+            <span class="eyebrow">Learn smarter from anywhere</span>
+            <h1>Build confidence, skills, and career momentum with <span>MentorLoop</span></h1>
+            <p class="lead">
+              Join a student-first learning platform with live classes, recorded lessons,
+              adaptive study plans, project-based practice, and mentor support.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./pricing.html">Get started</a>
+              <a class="btn btn-secondary" href="./categories.html">Explore courses</a>
+            </div>
+
+            <div class="hero-metrics" aria-label="Platform highlights">
+              <article>
+                <strong>25k+</strong>
+                <span>Active students</span>
+              </article>
+              <article>
+                <strong>180+</strong>
+                <span>Expert-led classes</span>
+              </article>
+              <article>
+                <strong>92%</strong>
+                <span>Completion rate</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="dashboard-card dashboard-main">
+              <div class="card-head">
+                <span class="pill pill-live">Live now</span>
+                <span class="muted">UI/UX Masterclass</span>
+              </div>
+              <h2>Personal study dashboard</h2>
+              <p>Track streaks, upcoming classes, quiz scores, and mentor feedback in one place.</p>
+              <div class="progress-list">
+                <div>
+                  <span>Weekly target</span>
+                  <strong>8 / 10 hours</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 80%"></span></div>
+                <div>
+                  <span>Design systems</span>
+                  <strong>67%</strong>
+                </div>
+                <div class="progress-bar accent"><span style="width: 67%"></span></div>
+              </div>
+            </div>
+            <div class="dashboard-card dashboard-floating dashboard-floating-top">
+              <strong>+12 certificates</strong>
+              <span>Recognized by partner institutions</span>
+            </div>
+            <div class="dashboard-card dashboard-floating dashboard-floating-bottom">
+              <strong>Mentor session in 30 min</strong>
+              <span>Ask questions and review assignments</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip section-sm" aria-label="Trusted by learners and institutions">
+          <p>Trusted by students from</p>
+          <div class="trust-list">
+            <span>Greenfield College</span>
+            <span>Urban Tech Academy</span>
+            <span>Future Scholars</span>
+            <span>BrightPath Institute</span>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <div class="section-heading">
+            <span class="eyebrow">Why students choose us</span>
+            <h2>Everything you need for focused online learning</h2>
+            <p>
+              MentorLoop combines academic structure with practical skill-building so learners stay engaged and make measurable progress.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="info-card">
+              <div class="icon-badge">🎓</div>
+              <h3>Live + recorded lessons</h3>
+              <p>Attend instructor-led classes or revisit recordings anytime with chapter markers and notes.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-badge">🧠</div>
+              <h3>Adaptive study plans</h3>
+              <p>Receive weekly recommendations based on your pace, quiz scores, and learning goals.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-badge">📊</div>
+              <h3>Progress analytics</h3>
+              <p>Track attendance, completion, assessments, and consistency with clear visual reports.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-badge">🤝</div>
+              <h3>Mentor guidance</h3>
+              <p>Get feedback on projects, join doubt-clearing sessions, and stay accountable throughout your journey.</p>
+            </article>
+          </div>
+
+          <div class="section-actions">
+            <a class="btn btn-primary" href="./features.html">See all features</a>
+          </div>
+        </section>
+
+        <section class="section alt-section" id="categories">
+          <div class="section-heading split-heading">
+            <div>
+              <span class="eyebrow">Course categories</span>
+              <h2>Choose a track that matches your goals</h2>
+            </div>
+            <div class="filter-group" role="tablist" aria-label="Course category filters">
+              <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+              <button class="filter-chip" type="button" data-filter="career">Career</button>
+              <button class="filter-chip" type="button" data-filter="school">School</button>
+              <button class="filter-chip" type="button" data-filter="creative">Creative</button>
+            </div>
+          </div>
+
+          <div class="category-grid">
+            <article class="course-card" data-track="career">
+              <span class="course-tag">Career</span>
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript, React, portfolio projects, and interview preparation.</p>
+              <ul>
+                <li>36 modules</li>
+                <li>12 guided projects</li>
+                <li>Certificate included</li>
+              </ul>
+            </article>
+            <article class="course-card" data-track="school">
+              <span class="course-tag">School</span>
+              <h3>STEM Excellence</h3>
+              <p>Math, science, and reasoning support with quizzes, problem sets, and revision maps.</p>
+              <ul>
+                <li>Daily practice labs</li>
+                <li>Mock tests</li>
+                <li>Teacher feedback</li>
+              </ul>
+            </article>
+            <article class="course-card" data-track="career">
+              <span class="course-tag">Career</span>
+              <h3>Data Analytics</h3>
+              <p>Excel, SQL, Power BI, dashboards, and business storytelling for beginners to intermediate learners.</p>
+              <ul>
+                <li>Case-study based</li>
+                <li>Industry mentorship</li>
+                <li>Job-ready roadmap</li>
+              </ul>
+            </article>
+            <article class="course-card" data-track="creative">
+              <span class="course-tag">Creative</span>
+              <h3>Graphic Design</h3>
+              <p>Branding, typography, UI basics, and visual communication with practical assignments.</p>
+              <ul>
+                <li>Creative briefs</li>
+                <li>Portfolio support</li>
+                <li>Peer review circles</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="section-actions">
+            <a class="btn btn-primary" href="./categories.html">View all course tracks</a>
+          </div>
+        </section>
+
+        <section class="section" id="roadmap">
+          <div class="section-heading">
+            <span class="eyebrow">How it works</span>
+            <h2>A guided roadmap from enrollment to achievement</h2>
+            <p>Every student gets a clear path, structured milestones, and support to stay on track.</p>
+          </div>
+
+          <div class="timeline-grid">
+            <article class="timeline-step">
+              <span>01</span>
+              <h3>Set your goal</h3>
+              <p>Pick a learning track based on school success, skill development, or career growth.</p>
+            </article>
+            <article class="timeline-step">
+              <span>02</span>
+              <h3>Follow your plan</h3>
+              <p>Get weekly lessons, assignments, and personalized recommendations in your dashboard.</p>
+            </article>
+            <article class="timeline-step">
+              <span>03</span>
+              <h3>Practice with projects</h3>
+              <p>Apply concepts in quizzes, projects, and workshops designed for real understanding.</p>
+            </article>
+            <article class="timeline-step">
+              <span>04</span>
+              <h3>Earn proof of learning</h3>
+              <p>Complete your capstone, receive your certificate, and share your achievements confidently.</p>
+            </article>
+          </div>
+
+          <div class="section-actions">
+            <a class="btn btn-primary" href="./roadmap.html">Open full roadmap</a>
+          </div>
+        </section>
+
+        <section class="section alt-section" id="testimonials">
+          <div class="section-heading">
+            <span class="eyebrow">Student success stories</span>
+            <h2>Learners stay motivated because progress feels real</h2>
+          </div>
+
+          <div class="testimonial-shell">
+            <article class="testimonial-card is-visible" data-testimonial>
+              <p>
+                “The study roadmap made it easy to balance college classes and skill-building. I completed the web development track and landed my first internship.”
+              </p>
+              <div>
+                <strong>Riya Sharma</strong>
+                <span>Frontend learner</span>
+              </div>
+            </article>
+            <article class="testimonial-card" data-testimonial>
+              <p>
+                “Mock tests and mentor reviews helped me improve my science and math scores. The dashboard kept me focused every week.”
+              </p>
+              <div>
+                <strong>Arjun Mehta</strong>
+                <span>STEM student</span>
+              </div>
+            </article>
+            <article class="testimonial-card" data-testimonial>
+              <p>
+                “I loved the project-first design classes. The feedback was practical, and I now have a portfolio I’m proud to share.”
+              </p>
+              <div>
+                <strong>Sana Khan</strong>
+                <span>Design learner</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="testimonial-controls" aria-label="Testimonial controls">
+            <button class="dot is-active" type="button" data-slide="0" aria-label="Show testimonial 1"></button>
+            <button class="dot" type="button" data-slide="1" aria-label="Show testimonial 2"></button>
+            <button class="dot" type="button" data-slide="2" aria-label="Show testimonial 3"></button>
+          </div>
+
+          <div class="section-actions">
+            <a class="btn btn-primary" href="./reviews.html">Read more reviews</a>
+          </div>
+        </section>
+
+        <section class="section pricing-section" id="pricing">
+          <div class="pricing-copy">
+            <span class="eyebrow">Affordable learning</span>
+            <h2>Start free, upgrade when you need deeper support</h2>
+            <p>
+              Begin with free access to foundational lessons, then unlock live workshops, mentor sessions, and certificates.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <span class="plan-label">Starter</span>
+              <h3>Free</h3>
+              <p>Perfect for exploring the platform and trying your first lessons.</p>
+              <ul>
+                <li>Access to starter courses</li>
+                <li>Weekly quizzes</li>
+                <li>Community support</li>
+              </ul>
+              <a class="btn btn-secondary" href="./pricing.html">Join now</a>
+            </article>
+            <article class="price-card featured">
+              <span class="plan-label">Most popular</span>
+              <h3>$19<span>/month</span></h3>
+              <p>Best for committed learners who want structure, feedback, and certification.</p>
+              <ul>
+                <li>All premium courses</li>
+                <li>Live mentor sessions</li>
+                <li>Projects + certificates</li>
+              </ul>
+              <a class="btn btn-primary" href="./pricing.html">Start 7-day trial</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section cta-banner">
+          <div>
+            <span class="eyebrow">Ready to learn?</span>
+            <h2>Make this semester your strongest one yet.</h2>
+          </div>
+          <form class="cta-form" id="cta-form">
+            <label class="sr-only" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            <button class="btn btn-primary" type="submit">Get updates</button>
+          </form>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <a class="brand footer-brand" href="./index.html">
+            <span class="brand-mark">M</span>
+            <span>MentorLoop</span>
+          </a>
+          <p>Flexible online learning for students who want structure, support, and measurable growth.</p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h3>Platform</h3>
+            <a href="./features.html">Features</a>
+            <a href="./categories.html">Courses</a>
+            <a href="./pricing.html">Pricing</a>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <a href="./roadmap.html">Learning roadmap</a>
+            <a href="./reviews.html">Reviews</a>
+            <a href="mailto:hello@mentorloop.example">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
+

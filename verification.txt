@@ -1,0 +1,6 @@
+index.html 200
+features.html 200
+categories.html 200
+roadmap.html 200
+reviews.html 200
+pricing.html 200
