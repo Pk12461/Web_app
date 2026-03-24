@@ -4,7 +4,7 @@
     return;
   }
 
-  const { useMemo, useState } = window.React;
+  const { useMemo, useState, useEffect } = window.React;
   const html = window.htm.bind(window.React.createElement);
 
   const planOptions = [

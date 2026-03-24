@@ -7,3 +7,4 @@ dist/
 pages.txt
 verification.txt
 .env
+.mentorloop-backend-online.json

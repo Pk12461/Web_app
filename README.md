@@ -42,6 +42,25 @@ If you only want static preview without backend, you can still open `index.html`
 
 Enrollment form submissions are now sent to `POST /api/enroll` and stored in PostgreSQL table `mentorloop_leads`.
 
+## Quick backend URL (no setup)
+
+If you need a backend URL immediately, use the Python API + localhost.run tunnel:
+
+```powershell
+.\go-online-backend.ps1
+```
+
+This starts:
+
+- `api-server.py` on `http://127.0.0.1:8787`
+- a temporary public URL saved in `backend-url.txt`
+
+Stop it with:
+
+```powershell
+.\stop-online-backend.ps1
+```
+
 Environment variables (`.env`):
 
 - `DATABASE_URL` (required)
